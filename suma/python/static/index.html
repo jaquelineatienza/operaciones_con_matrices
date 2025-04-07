@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrices en Flask</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <h1>Suma de Matrices</h1>
+    <form id="dimensionForm">
+      Filas: <input type="number" id="filas" min="1" required /> Columnas:
+      <input type="number" id="columnas" min="1" required />
+      <button type="submit">Generar matrices</button>
+    </form>
+
+    <div id="matricesContainer" style="margin-top: 20px"></div>
+    <button id="enviarBtn" style="display: none">
+      Enviar matrices y obtener resultado
+    </button>
+
+    <div id="resultado"></div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
